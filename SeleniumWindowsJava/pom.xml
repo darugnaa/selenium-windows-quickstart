@@ -1,0 +1,89 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.darugna.selenium.windows</groupId>
+    <artifactId>SeleniumWindows</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+    <description>Simple quickstart project to run Selenium on Windows using multiple browsers</description>
+
+    <developers>
+        <developer>
+            <name>Alessandro Da Rugna</name>
+            <email>alessandro.darugna@gmail.com</email>
+            <url>https://www.github.com/darugnaa</url>
+        </developer>
+    </developers>
+
+    <properties>
+        <selenium.version>2.48.2</selenium.version>
+        <webdriver.chrome.driver>C:\\Users\\alessandro\\tools\\chromedriver.exe</webdriver.chrome.driver>
+        <webdriver.ie.driver>C:\\Users\\alessandro\\tools\\IEDriverServer.exe</webdriver.ie.driver>
+        <webdriver.opera.driver>C:\\Users\\alessandro\\tools\\operadriver.exe</webdriver.opera.driver>
+    </properties>
+    <dependencies>
+        <!-- Selenium -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-firefox-driver</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-chrome-driver</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-ie-driver</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-htmlunit-driver</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+        
+        <!-- TestNG -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.9.9</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.19</version>
+                <configuration>
+                    <!-- Continue to run other tests when one fail -->
+                    <testFailureIgnore>true</testFailureIgnore>
+                    <!-- Drivers' configuration passed as system properties -->
+                    <systemPropertyVariables>
+                        <webdriver.chrome.driver>${webdriver.chrome.driver}</webdriver.chrome.driver>
+                        <webdriver.ie.driver>${webdriver.ie.driver}</webdriver.ie.driver>
+                        <webdriver.opera.driver>${webdriver.opera.driver}</webdriver.opera.driver>
+                    </systemPropertyVariables>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.3</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    
+</project>
