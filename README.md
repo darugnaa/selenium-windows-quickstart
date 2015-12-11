@@ -1,5 +1,5 @@
 # selenium-windows-quickstart
-Simple quickstart project to run Selenium on Windows using multiple browsers! (Java binding)
+Simple quickstart project to run Selenium on Windows using multiple browsers!
 
 
 ## Versions
@@ -16,3 +16,14 @@ Tested on
   * HtmlUnit 2.18
   * Internet Explorer 11 with [IEDriverServer 2.48](http://selenium-release.storage.googleapis.com/2.48/IEDriverServer_x64_2.48.0.zip)
   * Opera 33 with [Operadriver 0.2.2](https://github.com/operasoftware/operachromiumdriver/releases/download/v0.2.2/operadriver_win64.zip)
+
+# Setup
+
+## Driver setup
+Download drivers for Chrome, IE and Opera. Unzip them into a folder, for example `C:\Users\you\drivers\`.  
+Edit the Java project pom.xml and add the full path in the `<properties>` section.
+
+## Run using Java bindings
+
+ cd SeleniumWindowsJava
+ mvn clean verify
