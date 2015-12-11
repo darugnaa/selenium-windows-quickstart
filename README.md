@@ -18,6 +18,11 @@ Tested on
   * Opera 33 with [Operadriver 0.2.2](https://github.com/operasoftware/operachromiumdriver/releases/download/v0.2.2/operadriver_win64.zip)
 
 # Setup
+Clone this repository into your local machine
+
+    git clone https://github.com/darugnaa/selenium-windows-quickstart.git
+    cd selenium-windows-quickstart
+    start .
 
 ## Driver setup
 Download drivers for Chrome, IE and Opera. Unzip them into a folder, for example `C:\Users\you\drivers\`.  
@@ -25,5 +30,5 @@ Edit the Java project pom.xml and add the full path in the `<properties>` sectio
 
 ## Run using Java bindings
 
- cd SeleniumWindowsJava
- mvn clean verify
+    cd SeleniumWindowsJava
+    mvn clean verify
