@@ -32,3 +32,8 @@ Edit the Java project pom.xml and add the full path in the `<properties>` sectio
 
     cd SeleniumWindowsJava
     mvn clean verify
+
+## Run using Python bindings
+You need to install selenium in your system or virtualenv. It is available on pypi so you can install it with
+
+    pip install selenium==2.48.0
