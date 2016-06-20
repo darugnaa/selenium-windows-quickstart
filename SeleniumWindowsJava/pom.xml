@@ -16,9 +16,10 @@
     </developers>
 
     <properties>
-        <selenium.version>2.48.2</selenium.version>
+        <selenium.version>2.53.0</selenium.version>
+        <selenium.htmlunit.version>2.52.0</selenium.htmlunit.version>
         <webdriver.chrome.driver>C:\\Users\\alessandro\\tools\\chromedriver.exe</webdriver.chrome.driver>
-        <webdriver.ie.driver>C:\\Users\\alessandro\\tools\\IEDriverServer.exe</webdriver.ie.driver>
+        <webdriver.edge.driver>C:\\Program Files (x86)\\Microsoft Web Driver\\MicrosoftWebDriver.exe</webdriver.edge.driver>
         <webdriver.opera.driver>C:\\Users\\alessandro\\tools\\operadriver.exe</webdriver.opera.driver>
     </properties>
     <dependencies>
@@ -40,13 +41,13 @@
         </dependency>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-ie-driver</artifactId>
+            <artifactId>selenium-edge-driver</artifactId>
             <version>${selenium.version}</version>
         </dependency>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-htmlunit-driver</artifactId>
-            <version>${selenium.version}</version>
+            <version>${selenium.htmlunit.version}</version>
         </dependency>
         
         <!-- TestNG -->
@@ -69,7 +70,7 @@
                     <!-- Drivers' configuration passed as system properties -->
                     <systemPropertyVariables>
                         <webdriver.chrome.driver>${webdriver.chrome.driver}</webdriver.chrome.driver>
-                        <webdriver.ie.driver>${webdriver.ie.driver}</webdriver.ie.driver>
+                        <webdriver.edge.driver>${webdriver.edge.driver}</webdriver.edge.driver>
                         <webdriver.opera.driver>${webdriver.opera.driver}</webdriver.opera.driver>
                     </systemPropertyVariables>
                 </configuration>
