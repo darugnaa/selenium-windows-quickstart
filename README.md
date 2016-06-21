@@ -41,4 +41,4 @@ Edit the Java project pom.xml and add the full path in the `<properties>` sectio
 ## Run using Python bindings
 You need to install selenium in your system or virtualenv. It is available on pypi so you can install it with
 
-    pip install selenium==2.48.0
+    pip install selenium==2.53.5
