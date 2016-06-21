@@ -17,7 +17,7 @@ Tested on
   * Edge 25 with [MicrosoftWebDriver 10586](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/)
   * Opera 38 with [Operadriver 0.2.2](https://github.com/operasoftware/operachromiumdriver/releases/download/v0.2.2/operadriver_win64.zip)
 
-From Firefox 47 the `FirefoxDriver` is discotninued. The new `Marionette` driver is not officially released yet.
+From Firefox 47 the `FirefoxDriver` is discontinued. The new `Marionette` driver is not officially released yet.
 You can read more on StackOverflow: [Selenium 2.53 not working on Firefox 47](http://stackoverflow.com/questions/37693106/selenium-2-53-not-working-on-firefox-47),
 [Firefox 47.0 to crash on startup selenium webdriver](http://stackoverflow.com/questions/37791436/firefox-47-0-to-crash-on-startup-selenium-webdriver);
 and on [MDN](https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver).
