@@ -4,14 +4,14 @@ Simple quickstart project to run Selenium on Windows 10 using multiple browsers!
 
 ## Versions
 Tested on
-* Windows 10 Pro 64bit (Build 10586.420)
+* Windows 10 Pro 64bit
 * Java binding
-  * Java 8 (JDK 1.8.0_66)
-  * Maven 3.3.3
-  * Selenium 2.48.2
-  * TestNG 6.9.9
+  * Java 8 (JDK 1.8.0_121)
+  * Maven 3.3.9
+  * Selenium 3.3.1
+  * TestNG 6.11
 * Browsers
-  * Chrome 51 with [Chromedriver 2.22](http://chromedriver.storage.googleapis.com/2.22/chromedriver_win32.zip)
+  * Chrome 57 with [Chromedriver 2.29](http://chromedriver.storage.googleapis.com/2.29/chromedriver_win32.zip)
   * Firefox 46
   * HtmlUnit 2.18
   * Edge 25 with [MicrosoftWebDriver 10586](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/)
