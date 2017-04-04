@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.darugna.selenium.windows</groupId>
     <artifactId>SeleniumWindows</artifactId>
-    <version>1.0.0</version>
+    <version>3.0.0</version>
     <packaging>jar</packaging>
     <description>Simple quickstart project to run Selenium on Windows using multiple browsers</description>
 
@@ -16,11 +16,11 @@
     </developers>
 
     <properties>
-        <selenium.version>2.53.0</selenium.version>
+        <selenium.version>3.3.1</selenium.version>
         <selenium.htmlunit.version>2.52.0</selenium.htmlunit.version>
-        <webdriver.chrome.driver>C:\\Users\\alessandro\\tools\\chromedriver.exe</webdriver.chrome.driver>
+        <webdriver.chrome.driver>C:\\Users\\ale\\tools\\chromedriver.exe</webdriver.chrome.driver>
         <webdriver.edge.driver>C:\\Program Files (x86)\\Microsoft Web Driver\\MicrosoftWebDriver.exe</webdriver.edge.driver>
-        <webdriver.opera.driver>C:\\Users\\alessandro\\tools\\operadriver.exe</webdriver.opera.driver>
+        <webdriver.opera.driver>C:\\Users\\ale\\tools\\operadriver.exe</webdriver.opera.driver>
     </properties>
     <dependencies>
         <!-- Selenium -->

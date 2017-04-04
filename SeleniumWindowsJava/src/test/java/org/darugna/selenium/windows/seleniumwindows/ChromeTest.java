@@ -22,7 +22,7 @@ public class ChromeTest {
     
     @BeforeMethod
     public void setupBrowser() {
-        // Download the Chromedriver executable from  http://chromedriver.storage.googleapis.com/index.html?path=2.20/
+        // Download the Chromedriver executable from  http://chromedriver.storage.googleapis.com/index.html?path=2.29/
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.get("http://docs.seleniumhq.org/");
