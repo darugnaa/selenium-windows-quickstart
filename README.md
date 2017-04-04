@@ -42,3 +42,6 @@ Edit the Java project pom.xml and add the full path in the `<properties>` sectio
 You need to install selenium in your system or virtualenv. It is available on pypi so you can install it with
 
     pip install selenium==2.53.5
+	
+# DZone Refcard
+https://dzone.com/storage/assets/2789027-dzone-refcardz-selenium.pdf
